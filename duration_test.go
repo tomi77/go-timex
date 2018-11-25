@@ -27,3 +27,32 @@ func ExampleFormatDuration() {
 	// 10:00:00
 	// 1:10:10
 }
+
+func TestParseDuration(t *testing.T) {
+	d1, err := ParseDuration("1:30:00")
+	d2, _ := time.ParseDuration("1h30m")
+	assert.Empty(t, err)
+	assert.Equal(t, d2, d1)
+
+	d1, err = ParseDuration("2:31:15")
+	d2, _ = time.ParseDuration("2h31m15s")
+	assert.Empty(t, err)
+	assert.Equal(t, d2, d1)
+
+	d1, err = ParseDuration("25:00:00")
+	d2, _ = time.ParseDuration("25h")
+	assert.Empty(t, err)
+	assert.Equal(t, d2, d1)
+
+	d1, err = ParseDuration("01:30:00")
+	d2, _ = time.ParseDuration("1h30m")
+	assert.Empty(t, err)
+	assert.Equal(t, d2, d1)
+}
+
+func ExampleParseDuration() {
+	dur, _ := ParseDuration("1:10:15")
+	fmt.Println(dur)
+	// Output:
+	// 1h10m15s
+}
