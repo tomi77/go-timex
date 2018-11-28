@@ -1,30 +1,31 @@
 package timex
 
+// Layout parts for time.Parse function
 const (
-    stdLongMonth      = "January"
-    stdMonth          = "Jan"
-    stdNumMonth       = "1"
-    stdZeroMonth      = "01"
-    stdLongWeekDay    = "Monday"
-    stdWeekDay        = "Mon"
-    stdDay            = "2"
-    stdUnderDay       = "_2"
-    stdZeroDay        = "02"
-    stdHour           = "15"
-    stdHour12         = "3"
-    stdZeroHour12     = "03"
-    stdMinute         = "4"
-    stdZeroMinute     = "04"
-    stdSecond         = "5"
-    stdZeroSecond     = "05"
-    stdLongYear       = "2006"
-    stdYear           = "06"
-    stdPM             = "PM"
-    stdpm             = "pm"
-    stdTZ             = "MST"
-    stdISO8601TZ      = "Z0700"  // prints Z for UTC
-    stdISO8601ColonTZ = "Z07:00" // prints Z for UTC
-    stdNumTZ          = "-0700"  // always numeric
-    stdNumShortTZ     = "-07"    // always numeric
-    stdNumColonTZ     = "-07:00" // always numeric
+	StdLongMonth      = "January"
+	StdMonth          = "Jan"
+	StdNumMonth       = "1"
+	StdZeroMonth      = "01"
+	StdLongWeekDay    = "Monday"
+	StdWeekDay        = "Mon"
+	StdDay            = "2"
+	StdUnderDay       = "_2"
+	StdZeroDay        = "02"
+	StdHour           = "15"
+	StdHour12         = "3"
+	StdZeroHour12     = "03"
+	StdMinute         = "4"
+	StdZeroMinute     = "04"
+	StdSecond         = "5"
+	StdZeroSecond     = "05"
+	StdLongYear       = "2006"
+	StdYear           = "06"
+	StdPM             = "PM"
+	Stdpm             = "pm"
+	StdTZ             = "MST"
+	StdISO8601TZ      = "Z0700"  // prints Z for UTC
+	StdISO8601ColonTZ = "Z07:00" // prints Z for UTC
+	StdNumTZ          = "-0700"  // always numeric
+	StdNumShortTZ     = "-07"    // always numeric
+	StdNumColonTZ     = "-07:00" // always numeric
 )
