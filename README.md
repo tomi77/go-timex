@@ -22,3 +22,7 @@ Parses a duration string in format ``hh:mm:ss``.
 ### FormatDuration
 
 Returns a string representing the duration in the form ``hh:mm:ss``.
+
+### Strftime
+
+Formats ``time.Time`` in the same way as the strftime Python function.
