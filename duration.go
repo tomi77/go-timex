@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-// ParseDuration parses a duration string.
+// ParseDuration parses a duration string in format "h:mm:ss".
 func ParseDuration(s string) (time.Duration, error) {
 	parts := strings.Split(s, ":")
 	s = fmt.Sprintf("%sh%sm%ss", parts[0], parts[1], parts[2])
@@ -14,7 +14,7 @@ func ParseDuration(s string) (time.Duration, error) {
 	return d, nil
 }
 
-// FormatDuration returns a string representing the duration in the form "72:03:00".
+// FormatDuration returns a string representing the duration in the form "h:mm:ss".
 func FormatDuration(d time.Duration) string {
 	hours := int64(d.Hours())
 	minutes := int64(d.Minutes()) % 60
