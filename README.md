@@ -7,11 +7,15 @@
 
 ## Installation
 
-   go get github.com/tomi77/go-timex
+~~~sh
+go get github.com/tomi77/go-timex
+~~~
 
 ## Usage
 
-   import timex "github.com/tomi77/go-timex"
+~~~go
+import timex "github.com/tomi77/go-timex"
+~~~
 
 ## Functions
 
